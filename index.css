@@ -1,0 +1,95 @@
+body{
+  background-color: hsl(30, 54%, 90%);
+  
+}
+
+.card{
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 44rem;  
+  align-items:center;
+  display:block;
+  margin:auto; 
+  margin-top: 15rem; 
+  margin-bottom: 15rem; 
+  text-align:left;
+  border-radius: 1rem; 
+}
+
+img{
+  object-fit:contain; 
+  width: 40rem; 
+  border-radius: 20px; 
+}
+
+.imgContain{
+  text-align:center; 
+  margin-top:2rem; 
+}
+
+.title{ 
+  font-size: 40px;
+  margin-left: 2rem; 
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 1rem; 
+}
+
+.subtitle{
+  margin-left: 2rem; 
+  color: hsl(30, 10%, 34%);  
+}
+.prep{
+background-color: hsl(330, 100%, 98%);
+width: 40rem; 
+text-align:left; 
+margin-left: 2rem; 
+border-radius: 1rem; 
+padding-top:1rem; 
+padding-bottom:1rem; 
+}
+.prepTitle{
+  margin-left: 2rem; 
+  margin-bottom: 0 ;
+  color: rgb(139, 25, 124)
+}
+
+.prep ul{
+  margin-left: 1rem; 
+  line-height: 2rem; 
+  margin-top: 0;
+  color: hsl(30, 10%, 34%); 
+}
+
+.prep li::marker{
+  color: rgb(139, 25, 124);
+}
+
+br{
+  line-height:1rem; 
+}
+
+.ingredients{
+  margin-left:2rem; 
+}
+
+.ingredients h2{
+  color:rgb(139, 68, 1);
+}
+
+.ingredients ul{
+  margin-left:0; 
+  line-height: 2rem; 
+  margin-top: 0;
+}
+
+.ingredients li::marker{
+  color:rgb(139, 68, 1);
+}
+
+hr{
+  width: 30rem;  
+}
