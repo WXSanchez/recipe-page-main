@@ -14,8 +14,6 @@
 
 body{
   background-color: hsl(30, 54%, 90%);
-  display: flex;
-  flex-flow:column; 
 }
 
 .card{
@@ -25,19 +23,23 @@ body{
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 44rem;  
+  width: 48rem;  
   align-items:center;
   display:block;
   margin:auto; 
-  margin-top: 28rem; 
-  margin-bottom: 20rem; 
   text-align:left;
   border-radius: 1rem; 
+  margin-top:25rem; 
+
+  @media (max-width: 950px){
+    width: 90vw; 
+    margin-top:40rem; 
+  }
 }
 
 img{
   object-fit:contain; 
-  width: 40rem; 
+  width: 80%; 
   border-radius: 20px; 
 }
 
@@ -61,7 +63,7 @@ img{
 }
 .prep{
 background-color: hsl(330, 100%, 98%);
-width: 40rem; 
+width: 80%; 
 text-align:left; 
 margin-left: 2rem; 
 border-radius: 1rem; 
@@ -121,7 +123,7 @@ br{
 }
 
 hr{
-  width: 37rem;  
+  width: 80%;  
 }
 
 .instructions{
@@ -175,13 +177,13 @@ hr{
 
 .ing{
   color: hsl(30, 10%, 34%); 
-  margin-right: 17rem; 
-  width: 1rem; 
+  margin-right: 50%; 
+  width: 10%; 
 }
 
 .cal{
   color:rgb(139, 68, 1); 
-  width: 3rem;
+  width: 10%;
 }
 
 .nSub{
