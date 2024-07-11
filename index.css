@@ -1,6 +1,21 @@
+@font-face {
+  font-family: "OutfitBold";
+  src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OutfitRegular";
+  src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OutfitSemi";
+  src: url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("truetype");
+}
+
 body{
   background-color: hsl(30, 54%, 90%);
-  
+  display: flex;
+  flex-flow:column; 
 }
 
 .card{
@@ -14,8 +29,8 @@ body{
   align-items:center;
   display:block;
   margin:auto; 
-  margin-top: 15rem; 
-  margin-bottom: 15rem; 
+  margin-top: 28rem; 
+  margin-bottom: 20rem; 
   text-align:left;
   border-radius: 1rem; 
 }
@@ -36,11 +51,13 @@ img{
   margin-left: 2rem; 
   color: hsl(24, 5%, 18%);
   margin-bottom: 1rem; 
+  font-family:"OutfitBold"; 
 }
 
 .subtitle{
   margin-left: 2rem; 
   color: hsl(30, 10%, 34%);  
+  font-family:"OutfitRegular"; 
 }
 .prep{
 background-color: hsl(330, 100%, 98%);
@@ -54,7 +71,8 @@ padding-bottom:1rem;
 .prepTitle{
   margin-left: 2rem; 
   margin-bottom: 0 ;
-  color: rgb(139, 25, 124)
+  color: rgb(139, 25, 124);
+  font-family:"OutfitSemi"; 
 }
 
 .prep ul{
@@ -62,10 +80,15 @@ padding-bottom:1rem;
   line-height: 2rem; 
   margin-top: 0;
   color: hsl(30, 10%, 34%); 
+  font-family:"OutfitRegular"; 
 }
 
 .prep li::marker{
   color: rgb(139, 25, 124);
+}
+
+.prep li{
+  padding-left:1rem; 
 }
 
 br{
@@ -78,18 +101,92 @@ br{
 
 .ingredients h2{
   color:rgb(139, 68, 1);
+  font-family:"OutfitSemi"; 
 }
 
 .ingredients ul{
   margin-left:0; 
   line-height: 2rem; 
   margin-top: 0;
+  color: hsl(30, 10%, 34%); 
+  font-family:"OutfitRegular"; 
 }
 
 .ingredients li::marker{
   color:rgb(139, 68, 1);
 }
 
+.ingredients li{
+  padding-left:1rem; 
+}
+
 hr{
-  width: 30rem;  
+  width: 37rem;  
+}
+
+.instructions{
+  margin-left:2rem; 
+}
+
+.instructions h2{
+  color:rgb(139, 68, 1);
+  font-family:"OutfitSemi"; 
+}
+
+.instructions ol{
+  margin-left:0; 
+  line-height: 2rem; 
+  margin-top: 0;
+  color: hsl(30, 10%, 34%); 
+  font-family:"OutfitRegular"; 
+}
+
+.instructions li{
+  padding-left:1rem; 
+}
+
+
+.instructions li::marker{
+  color:rgb(139, 68, 1);
+  font-weight: bold; 
+}
+
+
+.nutrition h2{
+  color:rgb(139, 68, 1);
+  margin-left:2rem; 
+  font-family:"OutfitSemi"; 
+}
+
+.nutrition ul{
+  list-style-type: none;
+  line-height:.5rem; 
+  margin-top: 0; 
+  margin-left:2rem; 
+  font-family:"OutfitRegular"; 
+  
+}
+
+.nutrition li{
+  display:flex;
+  align-items:center; 
+  margin-left:2rem; 
+}
+
+.ing{
+  color: hsl(30, 10%, 34%); 
+  margin-right: 17rem; 
+  width: 1rem; 
+}
+
+.cal{
+  color:rgb(139, 68, 1); 
+  width: 3rem;
+}
+
+.nSub{
+  color: hsl(30, 10%, 34%); 
+  margin-bottom:0; 
+  margin-left:2rem; 
+  font-family:"OutfitRegular"; 
 }
